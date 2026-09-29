@@ -1,0 +1,2 @@
+package com.cgi.messagecentre.service.impl; import org.junit.jupiter.api.Test; import org.junit.jupiter.api.extension.ExtendWith; import org.mockito.InjectMocks; import org.mockito.Mock; import org.mockito.junit.jupiter.MockitoExtension;
+@ExtendWith(MockitoExtension.class) class MessageCentreServiceImplTest { @Mock Object repository; @InjectMocks MessageCentreServiceImpl service; @Test void serviceLoads(){} }

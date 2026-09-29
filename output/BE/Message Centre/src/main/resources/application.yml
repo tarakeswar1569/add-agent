@@ -1,0 +1,12 @@
+spring:
+  application.name: message-centre
+  datasource:
+    url: jdbc:db2://localhost:50000/message-centre
+    username: ${DB_USERNAME:dbuser}
+    password: ${DB_PASSWORD:dbpass}
+  jpa:
+    hibernate.ddl-auto: validate
+    properties.hibernate.dialect: org.hibernate.dialect.DB2Dialect
+server.port: 8080
+management.endpoints.web.exposure.include: health,info,metrics
+logging.level.com.cgi.messagecentre: INFO

@@ -1,0 +1,2 @@
+import axios from 'axios';
+export async function {{FETCH_METHOD}}(request: {{REQUEST_TYPE}}): Promise<{{RESPONSE_TYPE}}> { const r=await axios.post<{{RESPONSE_TYPE}}>('{{API_BASE_PATH}}',request); return r.data; }

@@ -1,0 +1,12 @@
+spring:
+  application.name: {{ARTIFACT_ID}}
+  datasource:
+    url: jdbc:{{DB_TYPE}}://localhost:50000/{{DB_NAME}}
+    username: ${DB_USERNAME:dbuser}
+    password: ${DB_PASSWORD:dbpass}
+  jpa:
+    hibernate.ddl-auto: validate
+    properties.hibernate.dialect: org.hibernate.dialect.DB2Dialect
+server.port: 8080
+management.endpoints.web.exposure.include: health,info,metrics
+logging.level.{{PACKAGE_BASE}}: INFO

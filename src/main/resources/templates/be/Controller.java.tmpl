@@ -1,0 +1,6 @@
+package {{PACKAGE_BASE}}.controller;
+import lombok.RequiredArgsConstructor; import lombok.extern.slf4j.Slf4j; import org.springframework.web.bind.annotation.*;
+@RestController @RequestMapping("{{BASE_PATH}}") @Slf4j @RequiredArgsConstructor
+public class {{CLASS_PREFIX}}Controller { private final {{CLASS_PREFIX}}Service service;
+{{ENDPOINT_METHODS}}
+}

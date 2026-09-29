@@ -1,0 +1,3 @@
+package {{PACKAGE_BASE}}.filter;
+import jakarta.servlet.*; import jakarta.servlet.http.*; import org.springframework.web.filter.OncePerRequestFilter; import java.io.IOException;
+public class {{CLASS_PREFIX}}AuthFilter extends OncePerRequestFilter { protected void doFilterInternal(HttpServletRequest request,HttpServletResponse response,FilterChain chain)throws ServletException,IOException{chain.doFilter(request,response);} }

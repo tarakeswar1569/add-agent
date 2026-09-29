@@ -1,0 +1,5 @@
+import React, { useEffect, useState } from 'react';
+{{COMPONENT_IMPORTS}}
+import { {{FETCH_METHOD}} } from '../../services/{{SERVICE_VAR}}Service';
+export const {{CONTAINER_NAME}}: React.FC = () => { const [data,setData]=useState<unknown>(); useEffect(()=>{ {{FETCH_METHOD}}({}).then(setData).catch(console.error); },[]);
+return <div>{{CHILD_COMPONENT_ELEMENTS}}</div>; };

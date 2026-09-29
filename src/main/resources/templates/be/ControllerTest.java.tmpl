@@ -1,0 +1,2 @@
+package {{PACKAGE_BASE}}.controller; import org.junit.jupiter.api.Test; import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest; import org.springframework.boot.test.mock.mockito.MockBean;
+@WebMvcTest({{CLASS_PREFIX}}Controller.class) class {{CLASS_PREFIX}}ControllerTest { @MockBean {{CLASS_PREFIX}}Service {{SERVICE_VAR}}; @Test void controllerLoads(){} }

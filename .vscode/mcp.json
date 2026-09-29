@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "add-code-agent": {
+      "type": "stdio",
+      "command": "java",
+      "args": [
+        "-jar",
+        "C:/Users/tarakeswarrao.mandar/add-agent/target/add-code-agent.jar",
+        "--mcp"
+      ]
+    }
+  }
+}

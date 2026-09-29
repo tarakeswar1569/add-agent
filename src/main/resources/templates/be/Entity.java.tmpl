@@ -1,0 +1,4 @@
+package {{PACKAGE_BASE}}.entity;
+import jakarta.persistence.*; import lombok.*;
+@Entity @Table(name="{{TABLE_NAME}}") @Getter @Setter @Builder @NoArgsConstructor @AllArgsConstructor
+public class {{CLASS_PREFIX}}Entity { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @Version private Long version; }

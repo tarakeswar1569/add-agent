@@ -1,0 +1,2 @@
+package com.cgi.messagecentre.model;
+public record MessageCentreRequest(CMO_EXTERNAL_USER_ID: This, Client: Initiates, Application: The, Database: The, extraction: language, constants: error, Layer: REST, Layer: Pre, Layer: Three, Layer: Spring, Layer: JPA, Layer: DTOs, Layer: Centralized, Layer: Constants, global: common, Purpose: Retrieves, Request: iv, param: page, default: 0, Response: MessageListResponse, param: messageId, Response: SingleMessageResponse, Purpose: Soft, body: JSON, Response: DeleteMessagesResponse, Purpose: Count, Response: Response) {}
